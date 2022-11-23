@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "50b5a0d5f824f1642d0fb6a05ed5c569",
+    "content-hash": "52481a939dbaed194816510cce046545",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2057,17 +2057,11 @@
         },
         {
             "name": "drupal/commerce_demo",
-            "version": "2.0.0",
+            "version": "dev-2.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce_demo.git",
-                "reference": "8.x-2.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce_demo-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "6566f2daafb1605d23a485a859cf44d7047efcb9"
+                "reference": "030c010895a756e8982787e35819d23e8e283ee3"
             },
             "require": {
                 "drupal/color_field": "^2.0",
@@ -2087,12 +2081,15 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
                 "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1600374272",
+                    "version": "8.x-2.0+2-dev",
+                    "datestamp": "1646398811",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -14162,7 +14159,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/commerce_demo": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
